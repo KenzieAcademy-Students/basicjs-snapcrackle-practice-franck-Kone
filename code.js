@@ -8,7 +8,7 @@ let result = '';
 function snapCrackle(maxValue) {
    
     for (let number = 1; number <= maxValue; number++) {
-        if (number === 1 || number % 3 === 0) {
+        if (number === 1 || number % 2 !== 0) {
             if (number % 5 === 0) {
                 result += 'SnapCrackle, ';
             } else {
@@ -23,7 +23,6 @@ function snapCrackle(maxValue) {
     }
     return result;
 }
-// console.log(snapCrackle(15))
 
 //Step Two
 function render(text, maxValue) {
